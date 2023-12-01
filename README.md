@@ -1,6 +1,6 @@
 # Easybank Landing Page
 
-![](./public/desktop-design.jpg.jpg)
+![](./public/desktop-design.jpg)
 
 ### [Live Site](https://test.vercel.app/)
 
