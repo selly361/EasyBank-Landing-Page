@@ -1,21 +1,23 @@
 /* Colors */
 
-$Very-Dark-Magenta: hsl(300, 43%, 22%);
-$Soft-Pink: hsl(333, 80%, 67%);
-$Dark-Grayish-Magenta: hsl(303, 10%, 53%);
-$Light-Grayish-Magenta: hsl(300, 24%, 96%);
+$DarkBlue: hsl(233, 26%, 24%);
+$LimeGreen: hsl(136, 65%, 51%);
+$BrightCyan: hsl(192, 70%, 51%);
+$GrayishBlue: hsl(233, 8%, 62%);
+$LightGrayishBlue: hsl(220, 16%, 96%);
+$LightGray: hsl(0, 0%, 98%);
 $White: hsl(0, 0%, 100%);
-
 
 /* Font */
 
-$font-primary: 'Spartan', sans-serif;
+$font-primary: 'Public Sans', sans-serif;
 
 /* Media query breakpoints */
 
 $breakpoints: (
     "sm": 375px,
-    "md": 1068px,
+    "md": 768px,
+    "lg": 1068px,
 );
 
 
