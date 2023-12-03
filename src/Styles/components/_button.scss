@@ -1,0 +1,39 @@
+@use 'Styles/utilities' as *;
+
+.button {
+  position: relative;
+
+  width: 163px;
+  height: 44px;
+  border-radius: 22px;
+
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 28px;
+  color: $White;
+  background: $Gradient;
+
+  display: grid;
+  place-items: center;
+
+  &::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: opacity 500ms ease-in;
+    opacity: 0;
+    background: rgba(255, 255, 255, 0.3);
+  }
+
+  &:hover {
+    cursor: pointer;
+    background-color: $White;
+
+    &::after {
+        opacity: 1;
+    }
+  }
+}
