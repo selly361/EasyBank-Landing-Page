@@ -1,0 +1,65 @@
+@use 'Styles/utilities' as *;
+
+.header {
+  width: 100vw;
+  height: 80px;
+  padding: 0 165px;
+  background-color: $White;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__nav {
+    width: 331px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__anchor {
+      color: $GrayishBlue;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: -0.108px;
+
+      height: 100%;
+      transition: 0.5s ease color;
+      cursor: pointer;
+      position: relative;
+      display: grid;
+      place-items: center;
+
+      &:hover {
+        color: $DarkBlue;
+      }
+
+      &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 10%;
+        height: 4px;
+        margin: auto;
+        opacity: 0;
+        background: $Gradient;
+
+        transition: 0.5s ease opacity, 0.5s ease width;
+      }
+
+      &:hover::before {
+        width: 100%;
+        opacity: 1;
+      }
+    }
+  }
+
+  &__menu-icon {
+    cursor: pointer;
+    display: none;
+    position: relative;
+    z-index: 200;
+  }
+}
