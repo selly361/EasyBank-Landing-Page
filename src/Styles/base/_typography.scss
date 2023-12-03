@@ -1,5 +1,6 @@
-@use "Styles/utilities" as *;
-@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
+@use 'Styles/utilities' as *;
+
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap');
 
 html {
   font-size: 15px;
@@ -7,4 +8,36 @@ html {
 
 body {
   font-family: $font-primary;
+  font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 300;
+}
+
+h1 {
+  @include HeadingL;
+}
+
+h2 {
+  @include HeadingM;
+}
+
+h3 {
+  @include HeadingS;
+}
+
+h4 {
+  @include HeadingXS;
+}
+
+p {
+  @include ParagraphM;
+}
+
+p.paragraphS {
+  @include ParagraphS;
 }
