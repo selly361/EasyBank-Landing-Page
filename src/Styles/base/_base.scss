@@ -1,0 +1,32 @@
+@use 'Styles/utilities' as *;
+
+body {
+  width: 100vw;
+  min-height: 200vh;
+  overflow-x: hidden;
+  background: url('../../../public/images/bg-intro-desktop.svg') no-repeat, $LightGray;
+  background-position: 590px -170px;
+}
+
+/* Custom Scroll-bar */
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10%;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background: $LimeGreen;
+}
+
+@include breakpoint(sm) {
+  body {
+    padding: 78px 16px 0 24px;
+    background: url('../../../public/images/bg-intro-mobile.svg');
+  }
+}
