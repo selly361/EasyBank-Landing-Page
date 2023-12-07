@@ -10,7 +10,7 @@ function HeroSection() {
           one-stop-shop for spending, saving, budgeting, investing, and much
           more.
         </p>
-        <button className="button hero-section__article__button">Request Invite</button>
+        <button className="button--primary hero-section__article__button">Request Invite</button>
       </article>
       <img className='hero-section__image' src='images/image-mockups.png' alt='' />
     </section>

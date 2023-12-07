@@ -11,7 +11,7 @@ function Header() {
         <a href='#' className='header__nav__anchor'>Blog</a>
         <a href='#' className='header__nav__anchor'>Careers</a>
       </nav>
-      <button className='button'>Request Invite</button>
+      <button className='button--primary'>Request Invite</button>
     </header>
   )
 }
