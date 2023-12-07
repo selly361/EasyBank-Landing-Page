@@ -1,4 +1,4 @@
-import { Header, HeroSection, KeyFeatures } from "Components"
+import { Header, HeroSection, KeyFeatures, Articles, Footer } from "Components"
 import { InstagramIcon } from "Icons"
 
 
@@ -8,6 +8,8 @@ function App() {
       <Header />
       <HeroSection />
       <KeyFeatures />
+      <Articles />
+      <Footer />
     </main>
   )
 }
