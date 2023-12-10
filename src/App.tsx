@@ -1,16 +1,18 @@
 import { Header, HeroSection, KeyFeatures, Articles, Footer } from "Components"
 import { InstagramIcon } from "Icons"
-
+import { Fragment } from "React"
 
 function App() {
   return (
-    <main>
+    <Fragment>
       <Header />
-      <HeroSection />
-      <KeyFeatures />
-      <Articles />
+      <main>
+        <HeroSection />
+        <KeyFeatures />
+        <Articles />
+      </main>
       <Footer />
-    </main>
+    </Fragment>
   )
 }
 
