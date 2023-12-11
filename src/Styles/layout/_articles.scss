@@ -3,7 +3,7 @@
 .articles-section {
   width: 100%;
   height: 659px;
-  padding: 80px 165px;
+  padding: 80px 106px;
 
   display: grid;
   gap: 40px;
@@ -11,7 +11,7 @@
   &__articles-container {
     width: 100%;
     display: flex;
-    gap: 30px;
+    justify-content: space-between;
 
     &__card {
       width: 255px;

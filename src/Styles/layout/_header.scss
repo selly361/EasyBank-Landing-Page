@@ -1,9 +1,9 @@
 @use 'Styles/utilities' as *;
 
 .header {
-  width: 100vw;
+  min-width: 100vw;
   height: 80px;
-  padding: 0 165px;
+  padding: 0 106px;
   background-color: $White;
   display: flex;
   justify-content: space-between;
