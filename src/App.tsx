@@ -1,6 +1,6 @@
 import { Header, HeroSection, KeyFeatures, Articles, Footer } from "Components"
 import { InstagramIcon } from "Icons"
-import { Fragment } from "React"
+import { Fragment } from "react"
 
 function App() {
   return (
