@@ -2,9 +2,9 @@
 
 .key-features-container {
     width: 100%;
-    height: 676px;
+    min-height: 676px;
     background-color: $LightGrayishBlue;
-    padding: 96px 165px 94px 165px;
+    padding: 96px 106px 94px 106px;
 
     display: flex;
     flex-direction: column;
@@ -22,8 +22,7 @@
     &__key-features {
         display: flex;
         align-items: center;
-        gap: 30px;
-
+        justify-content: space-between;
 
         &__key-feature {
             max-width: 255px;
@@ -35,5 +34,36 @@
                 margin-bottom: 12px;
             }
         }
+    }
+}
+
+
+@include breakpoint(md) {
+    .key-features-container {
+        padding: 64px 24px;
+        gap: 56px;
+        align-items: center;
+
+        &__intro-container {
+            text-align: center;
+        }
+
+        &__key-features {
+            display: grid;
+            grid-template: 1fr 1fr / 1fr 1fr;
+            gap: 30px;
+
+            &__key-feature {
+                gap: 16px; 
+                text-align: center;
+
+                
+                svg {
+                    margin-bottom: 8px;
+                    margin: auto;
+                }
+            }
+        }
+
     }
 }
